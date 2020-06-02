@@ -1,0 +1,292 @@
+﻿<Database>
+    <GameDBSymptom ID="SYM_ATHEROSCLEROSIS">
+        <DescriptionLocID>SYM_ATHEROSCLEROSIS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CC_ECHO</ExaminationRef>
+            <ExaminationRef>EXM_ECHO</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ACE_INHIBITOR</TreatmentRef>
+        </Treatments>
+
+        <RiskOfCollapseStartHours>18</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_PALPITATIONS</CollapseSymptomRef>
+        
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1505</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CARDIOMEGALY">
+        <DescriptionLocID>SYM_CARDIOMEGALY_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+        
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>8</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CC_ECHO</ExaminationRef>
+            <ExaminationRef>EXM_ECHO</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_DIURETICS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1819</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_DEHYDRATION">
+        <DescriptionLocID>SYM_DEHYDRATION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        
+        <RiskOfCollapseStartHours>18</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_EXHAUSTION</CollapseSymptomRef>
+        
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_REHYDRATION</TreatmentRef>
+        </Treatments>
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_LOW</CollapseProcedureRef>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1557</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_DYSPNEA">
+        <DescriptionLocID>SYM_DYSPNEA_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+
+        <RiskOfCollapseStartHours>8</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_RESPIRATORY_FAILURE</CollapseSymptomRef>
+
+        <Examinations>
+            <ExaminationRef>EXM_PHYSICAL_AND_VISUAL_EXAMINATION</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_OXYGENOTHERAPY</TreatmentRef>
+        </Treatments>
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_LOW</CollapseProcedureRef>
+        <ShameLevel>5</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2648</IconIndex>
+    </GameDBSymptom>
+    
+    <GameDBSymptom ID="SYM_EXHAUSTION">
+        <DescriptionLocID>SYM_EXHAUSTION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>High</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+        
+        <RiskOfCollapseStartHours>12</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_COMA</CollapseSymptomRef>
+        
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_INTRAVENOUS_INFUSION</TreatmentRef>
+        </Treatments>
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_LOW</CollapseProcedureRef>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1469</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_FAINTING">
+        <DescriptionLocID>SYM_FAINTING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>IMOBILE</PatientMobility>
+
+        <RiskOfCollapseStartHours>3</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_UNCONSCIOUSNESS</CollapseSymptomRef>
+        
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_NEUROLOGICAL_TESTING</ExaminationRef>
+        </Examinations>
+        
+        <Treatments>
+            <TreatmentRef>TRT_OXYGENOTHERAPY</TreatmentRef>
+        </Treatments>
+        
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_LOW</CollapseProcedureRef>
+        <ShameLevel>20</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1623</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_HYPERTENSION">
+        <DescriptionLocID>SYM_HYPERTENSION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_BLOOD_PRESSURE_AND_PULSE_MEASUREMENT</ExaminationRef>
+            <!--ExaminationRef>EXM_OBSERVATION</ExaminationRef-->
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ANTIHYPERTENSIVES</TreatmentRef>
+        </Treatments>
+
+        <RiskOfCollapseStartHours>15</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1511</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_IRREGULAR_HEARTBEAT">
+        <DescriptionLocID>SYM_IRREGULAR_HEARTBEAT_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>24</RiskOfCollapseStartHours>
+		<RiskOfCollapseEndHours>48</RiskOfCollapseEndHours>
+		<CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+        	<ExaminationRef>EXM_HEART_MONITORING</ExaminationRef>
+            <ExaminationRef>EXM_ECG</ExaminationRef>
+            <!--ExaminationRef>EXM_OBSERVATION</ExaminationRef-->
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_BETA_BLOCKERS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1375</IconIndex>
+    </GameDBSymptom>
+
+
+    <GameDBSymptom ID="SYM_PALPITATIONS">
+        <DescriptionLocID>SYM_PALPITATIONS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>Low</DiscomfortLevel>
+        <PatientComplains>true</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+
+        <RiskOfCollapseStartHours>18</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>36</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <Examinations>
+            <ExaminationRef>EXM_INTERVIEW</ExaminationRef>
+            <ExaminationRef>EXM_HEART_MONITORING</ExaminationRef>
+            <ExaminationRef>EXM_ECG</ExaminationRef>
+        </Examinations>
+        
+        <Treatments>
+            <TreatmentRef>TRT_INTRAVENOUS_INFUSION</TreatmentRef>
+        </Treatments>
+        
+        <CollapseProcedureRef>CONTROL_PROCEDURE_COLLAPSE_LOW</CollapseProcedureRef>
+        <ShameLevel>5</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2106</IconIndex>
+    </GameDBSymptom>
+
+
+    <!-- ========================= NEW SYMPTOMS SHARED WITH INTERNAL MEDICINE ================================== -->
+   
+    <!-- ===================================== SURGERY COMPLICATION SYMPTOMS ============================================== -->
+
+    <GameDBSymptom ID="SYM_CARDIAC_TAMPONADE">
+        <DescriptionLocID>SYM_CARDIAC_TAMPONADE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>3</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>6</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CC_ECHO</ExaminationRef>
+            <ExaminationRef>EXM_ECHO</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_PERICARDIOCENTESIS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2162</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_UNSTABLE_BLOOD_PRESSURE">
+        <DescriptionLocID>SYM_UNSTABLE_BLOOD_PRESSURE_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>12</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_BLOOD_PRESSURE_AND_PULSE_MEASUREMENT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_INTRAVENOUS_INFUSION</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>2166</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_SEPSIS">
+        <DescriptionLocID>SYM_SEPSIS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>4</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_SEPTIC_SHOCK</CollapseSymptomRef>
+        
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CC_BLOOD_ANALYSIS</ExaminationRef>
+            <ExaminationRef>EXM_URGENT_BLOOD_ANALYSIS</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_INTRAVENOUS_ANTIBIOTICS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>false</IsMainSymptom>
+        <IconIndex>1787</IconIndex>
+    </GameDBSymptom>
+   
+</Database>
+

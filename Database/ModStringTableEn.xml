@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Database>
+    <GameDBStringTable ID="Realistic Collapses and Disease Incidence - Edited">
+
+    <LanguageCode>en</LanguageCode>
+    <LanguageNameLocalized>English</LanguageNameLocalized>
+
+    <Contributors>
+    <Name>Butch</Name>
+    <Name>MacNaab</Name>
+    </Contributors>
+
+    <LocalizedStrings>
+
+    <GameDBLocalizedString>      <LocID>Realistic Collapses and Disease Incidence - Edited</LocID>                       <Text>Realistic Collapses and Disease Incidence - Edited</Text>  </GameDBLocalizedString>
+
+    </LocalizedStrings>
+
+    </GameDBStringTable>
+
+</Database>

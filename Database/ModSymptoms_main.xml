@@ -1,0 +1,123 @@
+﻿<Database>
+    <GameDBSymptom ID="SYM_ARTERIAL_STENOSIS">
+        <DescriptionLocID>SYM_ARTERIAL_STENOSIS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>5</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>10</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <PatientMobility>MOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_ANGIOGRAPHY</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_NITRATES</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <IconIndex>1299</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_BRAIN_HEMATOMAS">
+        <DescriptionLocID>SYM_BRAIN_HEMATOMAS_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>6</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_COMA</CollapseSymptomRef>
+        
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_CRANIOTOMY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <IconIndex>1781</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_CONCUSSION">
+        <DescriptionLocID>SYM_CONCUSSION_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+        <PatientMobility>MOBILE</PatientMobility>
+
+        <RiskOfCollapseStartHours>2</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_FAINTING</CollapseSymptomRef>
+
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ANALGESICS</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <IconIndex>1775</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_FLAIL_CHEST">
+        <DescriptionLocID>SYM_FLAIL_CHEST_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>5</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>12</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_CT</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_OXYGENOTHERAPY</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <IconIndex>1195</IconIndex>
+    </GameDBSymptom>
+
+    <GameDBSymptom ID="SYM_HEART_FAILING">
+        <DescriptionLocID>SYM_HEART_FAILING_DESCRIPTION</DescriptionLocID>
+        <DiscomfortLevel>None</DiscomfortLevel>
+        <PatientComplains>false</PatientComplains>
+        <Hazard>High</Hazard>
+
+        <RiskOfCollapseStartHours>12</RiskOfCollapseStartHours>
+        <RiskOfCollapseEndHours>24</RiskOfCollapseEndHours>
+        <CollapseSymptomRef>SYM_HEART_FAILURE</CollapseSymptomRef>
+        
+        <PatientMobility>IMOBILE</PatientMobility>
+        <Examinations>
+            <ExaminationRef>EXM_ECHO</ExaminationRef>
+        </Examinations>
+        <Treatments>
+            <TreatmentRef>TRT_ACE_INHIBITOR</TreatmentRef>
+        </Treatments>
+        <ShameLevel>0</ShameLevel>
+        <IsMainSymptom>true</IsMainSymptom>
+        <SpeechBubbleRef>BUBBLE_PLACEHOLDER</SpeechBubbleRef>
+        <CanNotTalk>true</CanNotTalk>
+        <IconIndex>1733</IconIndex>
+    </GameDBSymptom>
+
+    <!-- ===================================== NEW MAIN SYMPTOMS =====================================-->
+
+   
+</Database>
