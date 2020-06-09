@@ -3,6 +3,7 @@
 Il s'agit du mod "Realistic Collapses and Disease Incidence" édité pour être compatible avec la dernière mise à jour du jeu. 
 ------------------------------------------
 It's "Realistic Collapses and Disease Incidence" compatible with the last game's update.
+------------------------------------------
 
 Installation :
 1. Go to your Steam\steamapps\common\Project Hospital\ProjectHospital_Data\StreamingAssets\Addons
